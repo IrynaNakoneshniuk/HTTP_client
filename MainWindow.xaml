@@ -1,0 +1,15 @@
+﻿<Window x:Class="GutenbergDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Завантажити Гамлета" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="DownloadButton" Content="Завантажити Гамлета" Click="DownloadButton_Click"/>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="tbText" TextWrapping="Wrap" FontSize="16"/>
+        </ScrollViewer>
+    </Grid>
+</Window>
